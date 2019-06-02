@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/colorDeepBeige">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingTop="13dp"
+        android:src="@drawable/maintitle" />
+
+    <ImageButton
+        android:id="@+id/imageButtonChangeMeeting"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="90dp"
+        android:src="@drawable/pencil"
+        android:scaleType="fitXY"
+        android:background="#00000000"/>
+
+
+    <ImageButton
+        android:id="@+id/imageButtonChatting"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/comments"
+        android:scaleType="fitXY"
+        android:background="#00000000"/>
+
+    <ImageButton
+        android:id="@+id/ImagebuttonCustomerActionbar"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/jjim2"
+        android:scaleType="fitXY"
+        android:background="@color/colorDeepBeige"/>
+
+</RelativeLayout>

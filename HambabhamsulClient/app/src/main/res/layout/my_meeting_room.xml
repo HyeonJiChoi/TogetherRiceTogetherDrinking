@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutSeekerMainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorShallowYellow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/buttonLeaderO"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/yypossangmundongb"
+            android:text="모임장 모임"
+            android:textColor="@color/colorBlack"
+            android:background="@drawable/meetingroom_button_selector"/>
+
+        <Button
+            android:id="@+id/buttonLeaderX"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/buttonLeaderO"
+            android:fontFamily="@font/yypossangmundongb"
+            android:text="참여자 모임"
+            android:textColor="@color/colorGrey"
+            android:background="@drawable/meetingroom_button_selector" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewMyMeetingroomScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutMyMeetingroomScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/MyMeetingroomFragment"
+                android:name="com.example.hambabhamsulclient.MyMeetingRoomListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayoutSeekerMainScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewSeekerMenu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:id="@+id/linerLayoutSeekerMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSeekerWhole"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="전체" />
+
+            <Button
+                android:id="@+id/buttonSeekerHansik"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="한식" />
+
+            <Button
+                android:id="@+id/buttonSeekerBunsik"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="분식" />
+
+            <Button
+                android:id="@+id/buttonSeekerCafeDessert"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="카페,디저트" />
+
+            <Button
+                android:id="@+id/buttonSeekerDonkkasSushiJapanese"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="돈까스,회,일식" />
+
+            <Button
+                android:id="@+id/buttonSeekerChicken"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="치킨" />
+
+            <Button
+                android:id="@+id/buttonSeekerPizza"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="피자" />
+
+            <Button
+                android:id="@+id/buttonSeekerChinese"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="중국집" />
+
+            <Button
+                android:id="@+id/buttonSeekerJokbalBossam"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="족발,보쌈" />
+
+            <Button
+                android:id="@+id/buttonSeekerLunchbox"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="도시락" />
+
+            <Button
+                android:id="@+id/buttonSeekerSoup"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="찜,탕" />
+
+            <Button
+                android:id="@+id/buttonSeekerFastfood"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="패스트푸드" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/textViewSeekerCondition"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textSize="10pt"
+            android:textColor="#000000"
+            android:background = "@drawable/condition_textview_selector"
+            android:fontFamily="@font/nanumsquareacb" />
+
+        <Button
+            android:id="@+id/buttonSeekerSetting"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/yypossangmundongb"
+            android:background="@drawable/button_selector"
+            android:textColor="#ffff"
+            android:textSize="9pt"
+            android:text="조건 설정" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewSeekerMainScreen"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:fillViewport="true">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutSeekerMainScreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/firstConditionFragment"
+                android:name="com.example.hambabhamsulclient.FirstConditionFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </ScrollView>
+</LinearLayout>

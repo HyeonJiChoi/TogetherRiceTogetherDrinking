@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/colorDeepBeige">
+
+    <ImageView
+        android:id="@+id/imageViewActionBarIcon"
+        android:layout_width="70dp"
+        android:layout_height="56dp"
+        android:paddingTop="13dp"
+        android:src="@drawable/maintitle" />
+
+    <TextView
+        android:id="@+id/textViewConditionSettingActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingRight="10dp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/imageViewActionBarIcon"
+        android:text = "내 모임"
+        android:textColor="@color/colorBlack"
+        android:textSize="10pt"
+        android:fontFamily="@font/nanumsquareaceb" />
+</RelativeLayout>

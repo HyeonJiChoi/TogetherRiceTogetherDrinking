@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMakerConditionSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageViewMakerConditionSettingProfile"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/image_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/insert_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/nanumsquareacr"
+            android:text="*조건에 대해서 자세히 알고 싶으시면 글자를 꾹 눌러주세요."
+            android:background="@color/colorGrey"
+            android:textColor="@color/colorWhite"
+            android:textSize="5pt" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewMakerMeetingName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:text="이름"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt"/>
+
+                <EditText
+                    android:id="@+id/editTextMakerMeetingName"
+                    android:fontFamily="@font/dxmsubtitlesmkscpceuch"
+                    android:hint="모임이름: 최대 15자"
+                    android:maxLength="15" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewMakerFoodKind"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:text="음식"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <Spinner
+                    android:id="@+id/spinnerMakerFoodKind"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewMakerPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="45dp"
+                    android:text="기간*"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupMakerPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMakerShort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:layout_weight="1"
+                        android:text="단기" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMakerMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:layout_weight="1"
+                        android:text="중기" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMakerLong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:layout_weight="1"
+                        android:text="장기" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewMakerDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:text="날짜"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <Button
+                    android:id="@+id/buttonMakerDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:fontFamily="@font/nanumsquareaceb"
+                    android:gravity="center"
+                    android:background="@drawable/date_select_selector"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="7pt"
+                    android:text="날짜 선택" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewMakerTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="45dp"
+                    android:text="시간*"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <EditText
+                    android:id="@+id/editTextMakerStartTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dxmsubtitlesmkscpceuch"
+                    android:hint="0~23" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:textColor="@color/colorBlack"
+                    android:text="시 부터" />
+
+                <EditText
+                    android:id="@+id/editTextMakerEndTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dxmsubtitlesmkscpceuch"
+                    android:hint="0~23" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:textColor="@color/colorBlack"
+                    android:text="시 까지" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewMakerLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:text="지역"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <Spinner
+                    android:id="@+id/spinnerMakerSiDo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spinnerMakerSiGuGun"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spinnerMakerDongEupMyun"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewMakerAge"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:paddingRight="50dp"
+                    android:text="나이"
+                    android:textSize="8pt" />
+
+                <EditText
+                    android:id="@+id/editTextMakerMinAge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dxmsubtitlesmkscpceuch"
+                    android:hint="최소 나이" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:textColor="@color/colorBlack"
+                    android:text="세 이상 " />
+
+                <EditText
+                    android:id="@+id/editTextMakerMaxAge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/dxmsubtitlesmkscpceuch"
+                    android:hint="최대 나이" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:text="세 이하" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewMakerGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="성별"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupMakerGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMakerMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="남자" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMakerFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="여자" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMakerNeutrality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="무관" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewMakerLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:text="정원"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <EditText
+                    android:id="@+id/editTextMakerLimit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:fontFamily="@font/dxmsubtitlesmkscpceuch"
+                    android:hint="몇" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:text="명"
+                    android:textColor="@color/colorBlack" />
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/nanumsquareaceb"
+                android:gravity="center_horizontal"
+                android:text="우리 모임을 간단하게 소개해주세요!" />
+
+            <EditText
+                android:id="@+id/editTextMakerIntroduce"
+                android:hint="최대 20자"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/makerconditionsetting_introduce"
+                android:cursorVisible="true"
+                android:inputType="textMultiLine"
+                android:padding="20dp"
+                android:maxLength="20"/>
+
+            <Button
+                android:id="@+id/buttonMakerMake"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="180dp"
+                android:background="@drawable/meetingroom_button_selector"
+                android:fontFamily="@font/nanumsquareaceb"
+                android:text="만들기"
+                android:textColor="@color/colorBlack"
+                android:textSize="15pt"
+                android:layout_marginBottom="40dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

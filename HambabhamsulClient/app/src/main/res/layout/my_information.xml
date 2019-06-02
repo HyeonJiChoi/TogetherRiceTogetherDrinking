@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewSignUpScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewMyProfile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/jjim3"
+            android:layout_centerHorizontal="true"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/imageViewMyProfile"
+            android:background="@color/colorShallowYellow"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewMyProfile"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:text="아이디"
+            android:textSize="12pt"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/nanumsquareacb" />
+
+        <TextView
+            android:id="@+id/textViewMyId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="150dp"
+            android:layout_alignTop="@id/num2"
+            android:layout_marginLeft="60dp"
+            android:text = "testID"
+            android:textSize="12pt"
+            android:fontFamily = "@font/nanumsquareacr"/>
+
+        <TextView
+            android:id="@+id/num6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMyId"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="이름"
+            android:textColor="@color/colorBlack"
+            android:textSize="12pt"
+            android:fontFamily="@font/nanumsquareacb" />
+
+        <TextView
+            android:id="@+id/textViewMyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/num6"
+            android:paddingLeft="150dp"
+            android:layout_marginLeft="60dp"
+            android:text = "testName"
+            android:textSize="12pt"
+            android:fontFamily = "@font/nanumsquareacr" />
+
+        <TextView
+            android:id="@+id/num7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMyName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="생년월일"
+            android:textColor="@color/colorBlack"
+            android:textSize="12pt"
+            android:fontFamily="@font/nanumsquareacb" />
+
+        <TextView
+            android:id="@+id/textViewMyBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_alignTop="@id/num7"
+            android:paddingLeft="150dp"
+            android:text = "testBirthday"
+            android:textSize="12pt"
+            android:fontFamily = "@font/nanumsquareacr" />
+
+        <TextView
+            android:id="@+id/num8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMyBirthday"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="성별"
+            android:textColor="@color/colorBlack"
+            android:textSize="12pt"
+            android:fontFamily="@font/nanumsquareacb" />
+
+        <TextView
+            android:id="@+id/textViewMyGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/num8"
+            android:paddingLeft="150dp"
+            android:text = "testGender"
+            android:layout_marginLeft="60dp"
+            android:textSize="12pt"
+            android:fontFamily = "@font/nanumsquareacr" />
+
+        <TextView
+            android:id="@+id/num9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMyGender"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="닉네임"
+            android:textColor="@color/colorBlack"
+            android:textSize="12pt"
+            android:fontFamily="@font/nanumsquareacb" />
+
+        <TextView
+            android:id="@+id/textViewMyNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/num9"
+            android:paddingLeft="150dp"
+            android:text = "testNickname"
+            android:layout_marginLeft="60dp"
+            android:textSize="12pt"
+            android:fontFamily = "@font/nanumsquareacr" />
+
+        <TextView
+            android:id="@+id/num10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewMyNickname"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="성격"
+            android:textColor="@color/colorBlack"
+            android:textSize="12pt"
+            android:fontFamily="@font/nanumsquareacb" />
+
+        <ImageView
+            android:id="@+id/imageViewChar0"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/num10"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/extrovert"/>
+
+        <ImageView
+            android:id="@+id/imageViewChar1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_toRightOf="@id/imageViewChar0"
+            android:layout_alignTop="@+id/imageViewChar0"
+            android:src="@drawable/emotional"/>
+
+        <ImageView
+            android:id="@+id/imageViewChar2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_toRightOf="@id/imageViewChar1"
+            android:layout_alignTop="@+id/imageViewChar1"
+            android:src="@drawable/coldhearted"/>
+
+        <ImageView
+            android:id="@+id/imageViewChar3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/imageViewChar0"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/extrovert"/>
+
+        <ImageView
+            android:id="@+id/imageViewChar4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/imageViewChar1"
+            android:layout_toRightOf="@id/imageViewChar3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/extrovert"/>
+
+        <TextView
+            android:id="@+id/num11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewChar4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="밥먹는 양"
+            android:textColor="@color/colorBlack"
+            android:textSize="12pt"
+            android:fontFamily="@font/nanumsquareacb" />
+
+        <TextView
+            android:id="@+id/textViewMyEatingAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/num11"
+            android:paddingLeft="150dp"
+            android:text = "testEatingAmount"
+            android:layout_marginLeft="60dp"
+            android:textSize="12pt"
+            android:fontFamily = "@font/nanumsquareacr" />
+
+        <TextView
+            android:id="@+id/num12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMyEatingAmount"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="밥먹는 속도"
+            android:textColor="@color/colorBlack"
+            android:textSize="12pt"
+            android:fontFamily="@font/nanumsquareacb" />
+
+        <TextView
+            android:id="@+id/textViewMyEatingSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/num12"
+            android:paddingLeft="150dp"
+            android:text = "testNickname"
+            android:layout_marginLeft="60dp"
+            android:textSize="12pt"
+            android:fontFamily = "@font/nanumsquareacr" />
+
+        <TextView
+            android:id="@+id/num13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewMyEatingSpeed"
+            android:layout_marginLeft="40dp"
+            android:text="개인정보 공개 여부"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:textSize="12pt"
+            android:fontFamily="@font/nanumsquareacb"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/textViewMyAnomity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/num13"
+            android:paddingLeft="220dp"
+            android:text = "공개"
+            android:layout_marginLeft="60dp"
+            android:textSize="12pt"
+            android:fontFamily = "@font/nanumsquareacr"
+            android:layout_marginBottom="20dp" />
+    </RelativeLayout>
+</ScrollView>

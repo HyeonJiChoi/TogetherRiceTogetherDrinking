@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/colorDeepBeige">
+
+    <ImageView
+        android:id="@+id/imageViewActionBarIcon"
+        android:layout_width="70dp"
+        android:layout_height="56dp"
+        android:paddingTop="13dp"
+        android:src="@drawable/maintitle" />
+
+    <TextView
+        android:id="@+id/textViewConditionSettingActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@+id/imageViewActionBarIcon"
+        android:text = "모임 만들기"
+        android:textColor="@color/colorBlack"
+        android:textSize="10pt"
+        android:fontFamily="@font/nanumsquareaceb" />
+
+    <Button
+        android:id="@+id/buttonCompleteMakingMeetingRoomCompleteActionBar"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="4dp"
+        android:text="만들기"
+        android:textSize="8pt"
+        android:fontFamily="@font/nanumsquareaceb"
+        android:background="@drawable/meetingroom_button_selector"/>
+</RelativeLayout>

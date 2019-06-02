@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:background="@color/colorWhite">
+            </android.support.v4.view.ViewPager>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainWhole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/whole"
+                        android:paddingTop="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainHansik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/hansik"
+                        android:paddingTop="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainBunsik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bunsik"
+                        android:paddingTop="10dp"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainCafeDessert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/dessert"
+                        android:paddingTop="15dp"/>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainDonkkasSushiJapanese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/sushijapanese"
+                        android:paddingTop="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainChicken"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/chicken"
+                        android:paddingTop="10dp"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainPizza"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/pizza"
+                        android:paddingTop="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainChinese"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/chineses"
+                        android:paddingTop="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainJokbalBossam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/jokbal"
+                        android:paddingTop="10dp"/>
+                </TableRow>
+
+                <TableRow>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainLunchbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/lunchbox"
+                        android:text="도시락"
+                        android:paddingTop="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainSoup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/steam"
+                        android:text="찜,탕"
+                        android:paddingTop="10dp"/>
+
+                    <ImageButton
+                        android:id="@+id/buttonMainFastfood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/main_screen_menu_selector"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fastfood"
+                        android:text="패스트푸드"
+                        android:paddingTop="10dp"/>
+                </TableRow>
+
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/buttonMainMakeMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_selector"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="모임 만들기" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/drawer"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_image" />
+
+            <Button
+                android:id="@+id/buttonMenuLogout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/nanumsquareaceb"
+                android:text="로그아웃"
+                android:background="@drawable/menu_button"/>
+
+            <TableRow>
+
+
+                <ImageButton
+                    android:id="@+id/buttonMenuPrivarcy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_button"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/privarcy" />
+
+                <ImageButton
+                    android:id="@+id/buttonMenuMymeeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_button"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/myroom" />
+
+                <ImageButton
+                    android:id="@+id/buttonMenuWant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/menu_button"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/jjim" />
+            </TableRow>
+
+            <ImageButton
+                android:id="@+id/buttonMenuNotice"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/menu_button"
+                android:scaleType="fitXY"
+                android:src="@drawable/notice" />
+        </TableLayout>
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

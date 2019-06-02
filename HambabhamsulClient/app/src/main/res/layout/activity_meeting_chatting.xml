@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorShallowYellow">
+    <ListView
+        android:id="@+id/listViewChattingMessage"
+        android:layout_width="match_parent"
+        android:layout_height="610dp"
+        android:transcriptMode="alwaysScroll"
+        android:divider="@android:color/white"
+        android:dividerHeight="0dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutChatting"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextChattingMessage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="메시지를 입력하세요" />
+
+        <Button
+            android:id="@+id/buttonChattingSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/dxmsubtitlesmkscpceuch"
+            android:background="@drawable/meetingroom_button_selector"
+            android:textSize="10pt"
+            android:text="전송" />
+
+    </LinearLayout>
+</RelativeLayout>

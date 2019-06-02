@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSeekerConditionSetting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/nanumsquareacr"
+            android:text="*조건에 대해서 자세히 알고 싶으시면 글자를 꾹 눌러주세요."
+            android:background="@color/colorGrey"
+            android:textColor="@color/colorWhite"
+            android:textSize="5pt" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutSeekerConditionSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewSeekerPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:text="기간＊"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSeekerPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerShort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="단기" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="중기" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerLong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="장기" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerPeriodNothing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="무관" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewSeekerDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:text="날짜   "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <Button
+                    android:id="@+id/buttonSeekerDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:fontFamily="@font/nanumsquareaceb"
+                    android:gravity="center"
+                    android:background="@drawable/date_select_selector"
+                    android:text="날짜 선택"
+                    android:textSize="7pt"
+                    />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewSeekerTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:text="시간＊"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSeekerTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerMorning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="아침" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerLunch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="점심" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerNight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="저녁" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerTimeNothing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="무관" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewSeekerLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="50dp"
+                    android:text="지역   "
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <Spinner
+                    android:id="@+id/spinnerSeekerSiDo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spinnerSeekerSiGuGun"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spinnerSeekerDongEupMyun"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </TableRow>
+        </TableLayout>
+
+
+        <TableLayout
+            android:id="@+id/tableLayoutSeekerFeature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewSeekerFeature"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/yypossangmundongb"
+                    android:gravity="center"
+                    android:paddingTop="80dp"
+                    android:text="[모임 성격]"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="10pt" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewEatingAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="20dp"
+                    android:text="밥 먹는 양"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSeekerEatingAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerLittle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="1인분도\n많아요!"
+                        android:textSize="4.6pt" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerProper"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="1인분이\n적당해요!"
+                        android:textSize="4.6pt" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerMany"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="1인분은\n부족하죠!"
+                        android:textSize="4.6pt" />
+
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewEatingSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="밥 먹는 속도"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSeekerEatingSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerSlow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="느려요!" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerMiddle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="적당해요!" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerFast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="빨라요!" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewSeekerCharacter0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/nanumsquareacb"
+                    android:gravity="center"
+                    android:text="성격"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSeekerCharacter0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerExtrovert"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="외향적인" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerIntrovert"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="내향적인" />
+
+                </RadioGroup>
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewSeekerCharacter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacr"
+                    android:gravity="center"
+                    android:paddingRight="90dp"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSeekerCharacter1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerEmotional"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="감성적인" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeekerColdHearted"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="이성적인" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewSeekerCharacter2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacr"
+                    android:gravity="center"
+                    android:paddingRight="90dp"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSeekerCharacter2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeeker2_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="평범한" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeeker2_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="개성있는" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewSeekerCharacter3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacr"
+                    android:gravity="center"
+                    android:paddingRight="90dp"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSeekerCharacter3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeeker3_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="장난스러운" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeeker3_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="진중한" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/textViewSeekerCharacter4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/nanumsquareacr"
+                    android:gravity="center"
+                    android:paddingRight="90dp"
+                    android:textSize="8pt" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSeekerCharacter4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeeker4_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="성급한" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonSeeker4_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nanumsquareacr"
+                        android:text="여유로운" />
+                </RadioGroup>
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <Button
+                android:id="@+id/buttonSeekerNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/meetingroom_button_selector"
+                android:fontFamily="@font/yypossangmundongb"
+                android:text="다음"
+                android:textColor="@color/colorBlack"
+                android:textSize="14pt" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

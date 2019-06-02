@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:id = "@+id/linerlayoutSeekerConditionSetting"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/first_fragment_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text = "아무런 조건이 설정되어 있지 않아요!"
+        android:textColor="#000000"
+        android:fontFamily = "@font/nanumsquareaceb"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:text = "조건설정 해주세요!"
+        android:fontFamily = "@font/nanumsquareaceb"/>
+
+    <Button
+        android:id = "@+id/buttonSeekerCondition"
+        android:text = "조건설정"
+        android:gravity = "center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorDeepOrange"
+        android:textColor="@color/colorWhite"
+        android:textSize="9pt"
+        android:fontFamily = "@font/yypossangmundongb"/>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorBeige">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="4dp">
+
+        <ImageView
+            android:paddingTop="20dp"
+            android:id="@+id/asdasd"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_gravity="top|center"
+            android:layout_weight="6"
+            android:src="@drawable/loading_screen2"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="가천대"
+                android:padding = "4dp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorDeepOrange"
+                android:textSize="15sp"
+                android:fontFamily="@font/nanumsquareaceb"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/jjim1"
+                android:background="#00000000"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/asd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="150dp"
+
+                android:text = "안녕! 우리는 함바비, 함술이의 친구 함밥함술이야!\n
+                모두 앱 잘 사용하고 있니? 사실 이 앱은 굉장히 많은 공을 들였고,
+                 \n만들고 나서 많은 뿌듯함을 느꼇어!\n 이쁘고 좋게 봐줘."
+                android:textColor="@color/colorGrey"
+                android:textSize="10sp"
+                android:fontFamily="@font/nanumsquareacb" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/asd"
+                android:text = "\n신재원, 최현지, 박서연 올림"
+                android:textColor="@color/colorGrey"
+                android:textSize="10sp"
+                android:fontFamily="@font/nanumsquareacb" />
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
